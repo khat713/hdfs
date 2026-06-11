@@ -528,7 +528,11 @@ function Method({ open }: { open: (s: string, c: string) => void }) {
                     i % 2 ? "sm:ml-auto sm:flex-row" : "sm:flex-row-reverse sm:text-right"
                   }`}
                 >
-                  <div className="relative z-10 grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sage-ink font-display text-sm font-semibold text-cream sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+                  <div
+                    className={`relative z-10 grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sage-ink font-display text-sm font-semibold text-cream sm:absolute sm:top-4 sm:-translate-x-1/2 ${
+                      i % 2 ? "sm:left-0" : "sm:left-full"
+                    }`}
+                  >
                     {p.n}
                   </div>
                   <div className={`flex-1 rounded-2xl border border-ink/8 bg-cream/80 p-5 backdrop-blur ${i % 2 ? "sm:ml-6" : "sm:mr-6"}`}>
