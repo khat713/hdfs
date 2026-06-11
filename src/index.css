@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Calm, serene palette — sage + teal mist + warm sand, anchored by deep forest ink */
+  --color-ink: #1b2b27;
+  --color-ink-soft: #3a4d47;
+  --color-muted: #6b7d76;
+  --color-faint: #9aa8a2;
+
+  --color-cream: #fbf9f3;
+  --color-sand: #f3eee2;
+  --color-sand-deep: #e9e2d0;
+
+  --color-sage: #7a9b80;
+  --color-sage-deep: #4f7259;
+  --color-sage-ink: #2f4a39;
+
+  --color-teal: #6fa8a3;
+  --color-teal-deep: #3f7d78;
+  --color-mist: #b9d4d0;
+
+  --color-amber: #b4762e;
+  --color-amber-deep: #8a5320;
+  --color-clay: #c46a4f;
+}
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-sage) 35%, transparent);
+  color: var(--color-sage-ink);
+}
+
+/* Custom serene scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-sand);
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-sage) 55%, transparent);
+  border-radius: 99px;
+  border: 3px solid var(--color-sand);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-deep);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* Reading-friendly drop cap and prose accents reused across sections */
+.lead {
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.85;
+  color: var(--color-ink-soft);
+}
+
+/* Aurora / breathing background blobs */
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(4%, -6%, 0) scale(1.12);
+  }
+  66% {
+    transform: translate3d(-5%, 4%, 0) scale(0.95);
+  }
+}
+.animate-drift {
+  animation: drift 22s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.9;
+  }
+}
+.animate-breathe {
+  animation: breathe 7s ease-in-out infinite;
+}
+
+/* Slow rotating conic for the meditation halo */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+/* Subtle grain texture overlay */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
