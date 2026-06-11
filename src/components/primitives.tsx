@@ -15,7 +15,7 @@ import {
 } from "react";
 
 /* ----------------------------------------------------------------------------
- * Reveal — fades + slides children in the first time they enter the viewport.
+ * Reveal: fades + slides children in the first time they enter the viewport.
  * -------------------------------------------------------------------------- */
 export function Reveal({
   children,
@@ -79,7 +79,7 @@ export const staggerItem = {
 };
 
 /* ----------------------------------------------------------------------------
- * AnimatedNumber — counts up to `value` when scrolled into view.
+ * AnimatedNumber: counts up to `value` when scrolled into view.
  * -------------------------------------------------------------------------- */
 export function AnimatedNumber({
   value,
@@ -122,7 +122,7 @@ export function AnimatedNumber({
 }
 
 /* ----------------------------------------------------------------------------
- * useParallax — maps page scroll to a translateY for a given element.
+ * useParallax: maps page scroll to a translateY for a given element.
  * -------------------------------------------------------------------------- */
 export function useParallax(distance = 80): {
   ref: React.RefObject<HTMLDivElement | null>;

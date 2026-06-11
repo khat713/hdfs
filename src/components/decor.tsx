@@ -50,7 +50,7 @@ export function Aurora({ tones = ["var(--color-sage)", "var(--color-teal)", "var
   );
 }
 
-/* The breathing halo behind the hero figure — a literal "breathe in / out" cue. */
+/* The breathing halo behind the hero figure, a literal "breathe in / out" cue. */
 export function BreathingOrb() {
   return (
     <div className="relative grid place-items-center">

@@ -119,7 +119,7 @@ export const literature = [
     authors: "French, Dickerson & Mulder",
     year: 2023,
     finding:
-      "Not many of the perceived academic benefits of high-stakes testing have strong evidence to back them — reliance on these exams is “poorly justified by the balance of empirical evidence.”",
+      "Not many of the perceived academic benefits of high-stakes testing have strong evidence to back them. Reliance on these exams is “poorly justified by the balance of empirical evidence.”",
     tag: "High-stakes testing",
   },
   {
@@ -133,7 +133,7 @@ export const literature = [
     authors: "Zisopoulou & Varvogli",
     year: 2023,
     finding:
-      "Stress-management techniques used by children and adolescents reduce anxiety, stress, and depressive symptoms — improving social skills and academic achievement.",
+      "Stress-management techniques used by children and adolescents reduce anxiety, stress, and depressive symptoms, and they improve social skills and academic achievement.",
     tag: "Stress management",
   },
   {
@@ -154,7 +154,7 @@ export const procedure = [
   {
     n: "02",
     title: "Daily guided meditation",
-    body: "For two weeks, every class opened with a guided meditation video before instruction — breathing, guided attention, and quiet music.",
+    body: "For two weeks, every class opened with a guided meditation video before instruction: breathing, guided attention, and quiet music.",
   },
   {
     n: "03",
@@ -183,7 +183,7 @@ export const asset = (p: string) => `${import.meta.env.BASE_URL}assets/${p}`;
 
 // Live Google preview of the actual deliverables, embedded straight from Drive
 // (the same approach used on alums-declassified). The files are shared publicly,
-// so the iframe renders for any visitor — and, unlike the Office viewer, it works
+// so the iframe renders for any visitor, and unlike the Office viewer it works
 // from localhost too.
 export const drive = {
   paper: "1Hs5mQGZPr--vNZFBIsopSlhNv7h6g5IQ7brAlIvPJcc", // native Google Doc

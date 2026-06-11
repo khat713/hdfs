@@ -187,9 +187,9 @@ function Hero() {
           transition={{ duration: 1, delay: 0.3 }}
           className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft"
         >
-          A daily meditation intervention in a third-grade classroom at Carrboro
-          Elementary — and what it did for reading scores, anxiety, and the way
-          thirty-six eight-year-olds start their morning.
+          A daily meditation routine in a third-grade classroom at Carrboro
+          Elementary, and what it did for reading scores, anxiety, and the way
+          thirty-six eight-year-olds started their morning.
         </motion.p>
 
         <motion.div
@@ -266,8 +266,8 @@ function Overview({ open }: { open: (s: string, c: string) => void }) {
         <Reveal>
           <Eyebrow>The short version</Eyebrow>
           <h2 className="max-w-3xl font-display text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            Mean reading scores rose nearly{" "}
-            <span className="text-sage-deep">fourteen points</span> — and the room
+            Mean reading scores rose by nearly{" "}
+            <span className="text-sage-deep">fourteen points</span>, and the room
             felt calmer doing it.
           </h2>
         </Reveal>
@@ -301,7 +301,7 @@ function Overview({ open }: { open: (s: string, c: string) => void }) {
               <h3 className="font-display text-2xl font-semibold text-sage-ink">Abstract</h3>
               <p className="lead mt-4">
                 Third-graders at Carrboro Elementary face a punishing testing
-                calendar — roughly <strong>118 assessments across 180 school days</strong>.
+                calendar: roughly <strong>118 assessments across 180 school days</strong>.
                 This project asked whether a simple, daily meditation routine could
                 soften the toll. For two weeks, every class opened with a guided
                 meditation. Reading scores, a teacher survey, and the students’ own
@@ -314,7 +314,7 @@ function Overview({ open }: { open: (s: string, c: string) => void }) {
               </p>
             </div>
             <button
-              onClick={() => open(asset("figures/ces-logo.png"), "Carrboro Elementary School — “Todos los niños, todos los días”")}
+              onClick={() => open(asset("figures/ces-logo.png"), "Carrboro Elementary School: “Todos los niños, todos los días”")}
               className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm transition hover:shadow-xl"
             >
               <img
@@ -378,7 +378,7 @@ function Problem() {
               />
             </div>
             <p className="mt-3 text-sm text-cream/60">
-              Days spent testing vs. teaching — roughly two of every three weeks
+              Days spent testing versus teaching. Roughly two of every three weeks
               touch an assessment.
             </p>
           </Reveal>
@@ -393,7 +393,7 @@ function Problem() {
               {
                 icon: <Heart size={20} />,
                 t: "Anxiety has a cost",
-                b: "Test anxiety brings sleeplessness, lost appetite, and fear — and is significantly, negatively tied to performance.",
+                b: "Test anxiety brings sleeplessness, lost appetite, and fear, and it is strongly and negatively tied to performance.",
               },
               {
                 icon: <Users size={20} />,
@@ -468,7 +468,7 @@ function Method({ open }: { open: (s: string, c: string) => void }) {
         <Reveal>
           <Eyebrow tone="teal">How it ran</Eyebrow>
           <h2 className="max-w-3xl font-display text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            One classroom, two weeks, a quiet new ritual.
+            Two weeks of morning meditation in one classroom.
           </h2>
         </Reveal>
 
@@ -554,7 +554,7 @@ function Method({ open }: { open: (s: string, c: string) => void }) {
               {[1, 2, 3, 4].map((n) => (
                 <button
                   key={n}
-                  onClick={() => open(asset(`figures/assessment-${n}.png`), "Practice reading assessment — page sample")}
+                  onClick={() => open(asset(`figures/assessment-${n}.png`), "Practice reading assessment, page sample")}
                   className="group overflow-hidden rounded-xl border border-ink/8 bg-white transition hover:shadow-lg"
                 >
                   <img
@@ -592,7 +592,7 @@ function Results({ open }: { open: (s: string, c: string) => void }) {
         <Reveal>
           <Eyebrow>The results</Eyebrow>
           <h2 className="max-w-3xl font-display text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            Scores climbed. Anxiety eased. The room bought in.
+            Scores climbed, and anxiety eased.
           </h2>
         </Reveal>
 
@@ -610,8 +610,8 @@ function Results({ open }: { open: (s: string, c: string) => void }) {
                 The class mean on the practice reading check-in rose from{" "}
                 <strong>62.21%</strong> to <strong>76%</strong>. On an individual
                 level, students C, E, J, M, O, T, Z and AC each gained roughly{" "}
-                <strong>30 points or more</strong>. Not every score rose — but the
-                direction of the class was unmistakable.
+                <strong>30 points or more</strong>. Not every score rose, but the
+                direction of the class was clear.
               </p>
             </div>
           </Reveal>
@@ -667,8 +667,8 @@ function Results({ open }: { open: (s: string, c: string) => void }) {
             <div className="flex flex-col justify-center gap-4 rounded-2xl bg-sage-ink p-7 text-cream">
               <Quote size={28} className="text-mist" />
               <p className="font-display text-xl leading-relaxed">
-                The teacher moved from a 4/5 confidence rating to fully convinced —
-                planning to run meditation again before the End-of-Grade exam.
+                The teacher moved from a 4/5 confidence rating to fully convinced,
+                and planned to run meditation again before the End-of-Grade exam.
               </p>
               <div className="mt-2 flex gap-3">
                 {["teacher-presurvey", "teacher-postsurvey"].map((f, i) => (
@@ -712,11 +712,11 @@ function Voices() {
         <Reveal>
           <Eyebrow tone="amber">In their words</Eyebrow>
           <h2 className="max-w-3xl font-display text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            The data is real. So are the eight-year-olds.
+            What the third-graders made of it.
           </h2>
           <p className="mt-4 max-w-2xl text-ink-soft">
-            Unedited responses from the open-ended student survey — honest, funny,
-            and occasionally heartbreaking.
+            Unedited responses from the open-ended student survey, honest and
+            sometimes funny.
           </p>
         </Reveal>
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
@@ -741,10 +741,11 @@ function Resource({ open }: { open: (s: string, c: string) => void }) {
           </h2>
           <p className="lead mt-5">
             Beyond the classroom routine, the project produced a printable
-            mindfulness guide for parents — complete with{" "}
-            <strong>QR codes</strong> linking to a curated meditation playlist and a
-            plain-language explainer on why it helps. Built so a calmer morning can
-            travel home, including for the school’s many dual-language families.
+            mindfulness guide for parents, with{" "}
+            <strong>QR codes</strong> linking to a meditation playlist and a
+            plain-language explainer on why it helps. It is built so a calmer
+            morning can travel home, including for the school’s many dual-language
+            families.
           </p>
           <ul className="mt-6 space-y-3">
             {[
@@ -759,7 +760,7 @@ function Resource({ open }: { open: (s: string, c: string) => void }) {
             ))}
           </ul>
           <button
-            onClick={() => open(asset("figures/resource-handout.png"), "Mindfulness & Meditation — the take-home family resource")}
+            onClick={() => open(asset("figures/resource-handout.png"), "Mindfulness & Meditation: the take-home family resource")}
             className="group mt-8 inline-flex items-center gap-2 rounded-full bg-sage-ink px-6 py-3 text-sm font-semibold text-cream transition hover:bg-sage-deep"
           >
             View the full resource
@@ -770,7 +771,7 @@ function Resource({ open }: { open: (s: string, c: string) => void }) {
         <motion.div style={{ y }}>
           <Lift>
             <button
-              onClick={() => open(asset("figures/resource-handout.png"), "Mindfulness & Meditation — the take-home family resource")}
+              onClick={() => open(asset("figures/resource-handout.png"), "Mindfulness & Meditation: the take-home family resource")}
               className="group relative block w-full"
             >
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sage/20 via-teal/20 to-amber/20 blur-2xl" />
@@ -801,11 +802,11 @@ function Discussion() {
             </h2>
             <p className="mt-5 leading-relaxed text-cream/80">
               Even setting test scores aside, the qualitative results lean toward
-              success — echoing Müller et al. (2021) that short mindfulness breaks
-              support attention and reading comprehension. The intervention could
-              scale well beyond one classroom to reduce stress and anxiety more
-              broadly, and similar resources could travel to other testing-age
-              students.
+              success. This echoes Müller et al. (2021), who found that short
+              mindfulness breaks support attention and reading comprehension. The
+              intervention could scale beyond one classroom to reduce stress and
+              anxiety more broadly, and similar resources could reach other
+              testing-age students.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -815,7 +816,7 @@ function Discussion() {
             </h2>
             <ul className="mt-5 space-y-3 text-cream/80">
               {[
-                "One classroom of ~36 in a school of ~500 — a broader rollout would strengthen the findings.",
+                "One classroom of about 36 students in a school of about 500, so a broader rollout would strengthen the findings.",
                 "A two-week window; many students felt it “kind of” worked given the short runway.",
                 "No student pre-survey, and absences left several scores out of the analysis.",
                 "Morning vs. afternoon meditation across the two classes adds an energy-level confound.",
@@ -835,9 +836,9 @@ function Discussion() {
             <p className="mt-4 max-w-4xl text-lg leading-relaxed text-cream/85">
               Bringing meditation into the classroom shows real potential to lift
               academic scores while lowering anxiety and stress. Paired with a
-              take-home resource, that calm can extend to families — helping students
-              steady themselves before, during, and after the tests that fill their
-              year. Any continuation should build resources for the many households
+              take-home resource, that calm can extend to families, which helps
+              students steady themselves before, during, and after the tests that
+              fill their year. Any continuation should build resources for the many households
               that don’t speak English first.
             </p>
           </div>
@@ -913,11 +914,11 @@ function Artifacts({ open }: { open: (s: string, c: string) => void }) {
         <Reveal>
           <Eyebrow>The project itself</Eyebrow>
           <h2 className="max-w-3xl font-display text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            Read it, view it, download it.
+Read the full paper and poster.
           </h2>
           <p className="mt-4 max-w-2xl text-ink-soft">
-            A live preview of the actual documents — flip through the real poster and
-            paper right here, or download the originals below.
+            A live preview of the actual documents. Page through the real poster
+            and paper right here, or download the originals below.
           </p>
         </Reveal>
 
@@ -937,8 +938,9 @@ function Artifacts({ open }: { open: (s: string, c: string) => void }) {
                   The research paper
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                  Full APA write-up — problem statement, literature review, methods,
-                  results, discussion, and appendices. EDUC 698, advised by{" "}
+                  Full APA write-up covering the problem statement, literature
+                  review, methods, results, discussion, and appendices. EDUC 698,
+                  advised by{" "}
                   {meta.advisor}.
                 </p>
               </div>
@@ -972,9 +974,9 @@ function Artifacts({ open }: { open: (s: string, c: string) => void }) {
                   The research poster
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                  The capstone poster presented at the UNC School of Education —
-                  introduction, methods, results, and the take-home resource at a
-                  glance.
+                  The capstone poster presented at the UNC School of Education,
+                  with its introduction, methods, results, and the take-home
+                  resource at a glance.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">

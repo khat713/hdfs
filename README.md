@@ -6,8 +6,8 @@ Education**, advised by Dr. Kara Hume.
 
 After student teaching a third-grade classroom at Carrboro Elementary School, I
 ran a two-week daily meditation intervention and measured its effect on reading
-scores, test anxiety, and classroom behavior. This site tells that story — the
-problem of overtesting, the literature, the method, and the results — with the
+scores, test anxiety, and classroom behavior. This site tells that story: the
+problem of overtesting, the literature, the method, and the results, with the
 real data, figures, student voices, and the take-home family resource I built.
 
 **Live site:** https://khat713.github.io/hdfs/
@@ -22,7 +22,7 @@ real data, figures, student voices, and the take-home family resource I built.
 
 - **Vite + React + TypeScript**
 - **Tailwind CSS v4**
-- **Framer Motion** — scroll-linked parallax, reveal-on-scroll, animated counters
+- **Framer Motion** for scroll-linked parallax, reveal-on-scroll, animated counters
   and charts
 - Custom SVG data visualizations (no chart library)
 
@@ -43,12 +43,12 @@ GitHub Pages. Enable **Settings → Pages → Source: GitHub Actions** once.
 
 ## Project files
 
-The original deliverables are embedded **live** on the site as Google previews —
-visitors can flip through the real documents in-page (the same approach used on
+The original deliverables are embedded **live** on the site as Google previews.
+Visitors can page through the real documents in-page (the same approach used on
 alums-declassified):
 
-- **Research paper** — the full APA write-up (Google Doc)
-- **Research poster** — the capstone poster (PowerPoint in Drive)
+- **Research paper** is the full APA write-up (Google Doc)
+- **Research poster** is the capstone poster (PowerPoint in Drive)
 
 Downloadable copies also live in `public/assets/docs/`
 (`meditation-research-paper.docx`, `meditation-poster.pptx`).

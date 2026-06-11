@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { grades, meanPre, meanPost } from "../data";
 
 /* ----------------------------------------------------------------------------
- * GradeChart — grouped pre/post bar chart, per student, bars grow on scroll.
+ * GradeChart: grouped pre/post bar chart, per student, bars grow on scroll.
  * Hover a pair to read the exact scores.
  * -------------------------------------------------------------------------- */
 export function GradeChart() {
@@ -97,7 +97,7 @@ function Legend({ swatch, label }: { swatch: string; label: string }) {
 }
 
 /* ----------------------------------------------------------------------------
- * MeanCompare — the headline 62% -> 76% shift, drawn as two filling columns.
+ * MeanCompare: the headline 62% -> 76% shift, drawn as two filling columns.
  * -------------------------------------------------------------------------- */
 export function MeanCompare() {
   const ref = useRef<HTMLDivElement>(null);
@@ -139,7 +139,7 @@ export function MeanCompare() {
 }
 
 /* ----------------------------------------------------------------------------
- * Donut — animated single-question survey breakdown.
+ * Donut: animated single-question survey breakdown.
  * -------------------------------------------------------------------------- */
 const toneColor: Record<string, string> = {
   good: "var(--color-sage-deep)",
